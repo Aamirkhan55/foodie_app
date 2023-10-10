@@ -33,21 +33,21 @@ class PremiumScreen extends StatelessWidget {
             _singlePremiumItemWidget(title: "Enjoy zero delivery fees and reduced\nservice fees on order \$12.", icon: const Icon(Icons.shopping_cart, color: primaryColorED6E1B, size: 30,)),
             const SizedBox(height: 20,),
             _singlePremiumItemWidget(title: "Free 1 month trial, \$9.99 monthly\nafter, easily cancel anything.", icon: const Icon(Icons.calendar_today, color: primaryColorED6E1B, size: 30,)),
-            const SizedBox(height: 30,),
+            const SizedBox(height: 40,),
             Container(
               width: double.infinity,
               height: 1,
               color: Colors.grey,
             ),
-            const SizedBox(height: 30,),
+            const SizedBox(height: 40,),
             const ButtonContainerWidget(title: "Try FoodPrime free for 1 month"),
-            const SizedBox(height: 30,),
+            const SizedBox(height: 40,),
             Center(
               child: GestureDetector(onTap: () {
                 Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (_) => const MainScreen()), (route) => false);
               },child: const Text("Skip", style: TextStyle(fontSize: 16, color: Colors.black, fontWeight: FontWeight.bold),)),
             ),
-            const SizedBox(height: 30,),
+            const SizedBox(height: 40,),
 
             RichText(
               textAlign: TextAlign.center,
