@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodie_app/theme/theme_style.dart';
+import 'package:foodie_app/widgets/button_container_widgets.dart';
 import 'package:foodie_app/widgets/form_container_widget.dart';
 
 class SignInPage extends StatefulWidget {
@@ -63,7 +64,12 @@ class _SignInPageState extends State<SignInPage> {
                       ),
                       )   
               ],
-            ),  
+            ),
+            const SizedBox(height: 20), 
+            ButtonContainerWidget(
+              title: 'Sign In',
+              onTap: (){},
+              ), 
           ],
         ),
       ),
