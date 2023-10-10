@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:foodie_app/screen/main/nav/cart_screen.dart';
-import 'package:foodie_app/screen/main/nav/home_screen.dart';
-import 'package:foodie_app/screen/main/nav/profile_screen.dart';
+import 'package:foodie_app/screen/main/nav/cart/cart_screen.dart';
+import 'package:foodie_app/screen/main/nav/home/home_screen.dart';
+import 'package:foodie_app/screen/main/nav/profile/profile_screen.dart';
 import 'package:foodie_app/theme/theme_style.dart';
 
 class MainScreen extends StatefulWidget {
