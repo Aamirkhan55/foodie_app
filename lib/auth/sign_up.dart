@@ -118,7 +118,7 @@ class _SignUpPageState extends State<SignUpPage> {
                               (route) => false);
                     },
                     child: const Text(
-                      "Log In",
+                      "Sign In",
                       style: TextStyle(fontSize: 15, color: primaryColorED6E1B),
                     ))
               ],
