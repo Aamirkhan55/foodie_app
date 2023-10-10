@@ -27,7 +27,7 @@ class ButtonContainerWidget extends StatelessWidget {
         height: height,
         decoration: BoxDecoration(
           color: primaryColorED6E1B,
-          borderRadius: BorderRadius.circular(5),
+          borderRadius: BorderRadius.circular(15),
         ),
         child: Center(
           child: hasIcon == true

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodie_app/screen/main/main_screen.dart';
+import 'package:foodie_app/onBoarding/onBoarding_screen.dart';
 import 'package:foodie_app/screen/splash/splash_screen.dart';
 
 void main() {
@@ -32,7 +32,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: primarySwatch,
         ),
-        home: const SplashScreen(child: MainScreen()),
+        home: const SplashScreen(child: OnBoardingScreen()),
       );
   }
 }
