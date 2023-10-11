@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
-class FoodDetailsScreen extends StatelessWidget {
-  const FoodDetailsScreen({super.key, required Map<String, String> data});
+class FoodDetailScreen
+ extends StatelessWidget {
+  const FoodDetailScreen
+  ({super.key});
 
   @override
   Widget build(BuildContext context) {

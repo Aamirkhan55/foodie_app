@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:foodie_app/data/food_data.dart';
-import 'package:foodie_app/screen/main/nav/home/home_category/grocery/food_details.dart';
+import 'package:foodie_app/screen/main/nav/home/home_category/grocery/grocery_detail.dart';
 import 'package:foodie_app/screen/search/search_screen.dart';
 import 'package:foodie_app/theme/theme_style.dart';
 import 'package:foodie_app/widgets/search_widget.dart';
@@ -170,7 +170,7 @@ class _GroceryFruitScreenState extends State<GroceryFruitScreen> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => FoodDetailsScreen(data: fruit)));
+                    builder: (context) => GroceryDetailsScreen(data: fruit)));
           },
           child: Column(
             children: [
@@ -223,7 +223,7 @@ class _GroceryFruitScreenState extends State<GroceryFruitScreen> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => FoodDetailsScreen(data: vegetable)));
+                    builder: (context) => GroceryDetailsScreen(data: vegetable)));
           },
           child: Column(
             children: [
@@ -276,7 +276,7 @@ class _GroceryFruitScreenState extends State<GroceryFruitScreen> {
             Navigator.push(
                 context,
                 MaterialPageRoute(
-                    builder: (context) => FoodDetailsScreen(data: kitchen)));
+                    builder: (context) => GroceryDetailsScreen(data: kitchen)));
           },
           child: Column(
             children: [
