@@ -3,10 +3,17 @@ import 'package:foodie_app/screen/search/search_screen.dart';
 import 'package:foodie_app/theme/theme_style.dart';
 import 'package:foodie_app/widgets/search_widget.dart';
 
-class FoodScreen extends StatelessWidget {
+class FoodScreen extends StatefulWidget {
   const FoodScreen({super.key});
 
   @override
+  State<FoodScreen> createState() => _FoodScreenState();
+}
+
+class _FoodScreenState extends State<FoodScreen> {
+
+  int _currentSelectedCategory = 0 ;
+ @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -61,6 +68,97 @@ class FoodScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-    ])));
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                _singleCategoryItemWidget(
+                  title: 'Fruits',
+                  color: _currentSelectedCategory == 0
+                      ? primaryColorED6E1B
+                      : Colors.grey[400],
+                  onTap: () {
+                    setState(() {
+                      _currentSelectedCategory = 0;
+                    });
+                  },
+                ),
+                _singleCategoryItemWidget(
+                  title: 'Vegetables',
+                  color: _currentSelectedCategory == 1
+                      ? primaryColorED6E1B
+                      : Colors.grey[400],
+                  onTap: () {
+                    setState(() {
+                      _currentSelectedCategory = 1;
+                    });
+                  },
+                ),
+                _singleCategoryItemWidget(
+                  title: 'Kitchen',
+                  color: _currentSelectedCategory == 2
+                      ? primaryColorED6E1B
+                      : Colors.grey[400],
+                  onTap: () {
+                    setState(() {
+                      _currentSelectedCategory = 2;
+                    });
+                  },
+                ),
+              ],
+            ),
+            const SizedBox(height: 20),
+            _switchCategoryOnSelectedIndex(_currentSelectedCategory)
+    ]
+    ),
+    ),
+    );
   }
+   Widget _singleCategoryItemWidget(
+      {VoidCallback? onTap, Color? color, String? title}) {
+    return Expanded(
+        child: GestureDetector(
+      onTap: onTap,
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 5),
+        width: 110,
+        height: 40,
+        decoration: BoxDecoration(
+          color: color,
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Center(
+          child: Text(
+            title!,
+            style: const TextStyle(
+              color: whiteColor,
+            ),
+          ),
+        ),
+      ),
+    ));
+  }
+
+  _switchCategoryOnSelectedIndex(int index) {
+    switch (index) {
+      case 0:
+        {
+          return _buildSpecialBurgerList();
+        }
+      case 1:
+        {
+          return _buildSpecialPizzaList();
+        }
+      case 2:
+        {
+          return _buildSpecialSandwichList();
+        }
+    }
+  }
+  
+  _buildSpecialBurgerList() {}
+  
+  _buildSpecialPizzaList() {}
+  
+  _buildSpecialSandwichList() {}
+
 }
