@@ -4,8 +4,8 @@ import 'package:foodie_app/theme/theme_style.dart';
 import 'package:foodie_app/widgets/button_container_widgets.dart';
 
 
-class CartPage extends StatelessWidget {
-  const CartPage({super.key});
+class CartScreen extends StatelessWidget {
+  const CartScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

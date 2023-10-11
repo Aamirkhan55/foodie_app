@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class GroceryScreen extends StatelessWidget {
-  const GroceryScreen({super.key});
+class GroceryFruitScreen extends StatelessWidget {
+  const GroceryFruitScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
