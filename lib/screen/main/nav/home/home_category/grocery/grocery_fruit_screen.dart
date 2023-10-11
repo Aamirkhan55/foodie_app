@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:foodie_app/screen/search/search_screen.dart';
 import 'package:foodie_app/theme/theme_style.dart';
+import 'package:foodie_app/widgets/search_widget.dart';
 
 class GroceryFruitScreen extends StatefulWidget {
   const GroceryFruitScreen({super.key});
@@ -23,6 +25,40 @@ class _GroceryFruitScreenState extends State<GroceryFruitScreen> {
           onTap: () {
             Navigator.pop(context);
           },
+        ),
+      ),
+      body: Container(
+        margin: const EdgeInsets.symmetric(vertical: 20.0, horizontal: 20.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Expanded(
+                  child: SearchWidget(
+                    onTap : () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> const SearchScreen()));
+                    }
+                  ),
+                ),
+              const SizedBox(width: 10),
+              Container(
+                width: 40,
+                height: 40,
+                decoration: const BoxDecoration(
+                  color: primaryColorED6E1B,
+                  shape: BoxShape.circle,
+                ),
+              child: const Center(
+                child: Icon(
+                  Icons.settings_voice,
+                  color: whiteColor,
+                  )
+                ), 
+              ),  
+              ],
+            ),
+          ],
         ),
       ),
     );
