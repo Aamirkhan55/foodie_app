@@ -40,7 +40,7 @@ class CartScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                   Text(
-                    "2",
+                    "3",
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                 ],
