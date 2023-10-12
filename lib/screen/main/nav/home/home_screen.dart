@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 40),
+        margin: const EdgeInsets.symmetric(horizontal: 15, vertical: 0),
         child: Column(
           children: [
             const SizedBox(height: 20),
@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
             description: "Big Boy Burger With Spacial Kabab And Jalapino", 
             image: "assets/home_image_2.png",
             onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) {
-               return const FoodScreen();
+               return const  FoodMainScreen();
             })),
             )
           ],
